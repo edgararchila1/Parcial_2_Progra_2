@@ -80,7 +80,7 @@ public class frmPizza {
                 }
                 modeloEstado.addElement("Ingredientes: " + nombresIngredientes);
                 double precio = calcularPrecio();
-                modeloEstado.addElement("Precio: $" + precio);
+                modeloEstado.addElement("Precio: Q" + precio);
                 modeloEstado.addElement("Pizza preparada");
             } else {
                 JOptionPane.showMessageDialog(null, "Error al preparar la pizza");
@@ -126,7 +126,7 @@ public class frmPizza {
 
     private void actualizarPrecioPizza() {
         double precio = calcularPrecio();
-        lblTotal.setText(String.format("$%.2f", precio));
+        lblTotal.setText(String.format("Q%.2f", precio));
     }
 
     private void CargarEspecialidades() {
